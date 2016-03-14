@@ -10,7 +10,6 @@ import android.widget.EditText;
 import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.BackendlessCallback;
-import com.backendless.exceptions.BackendlessException;
 import com.test.autoriz1.Fragments.FragAutoriz;
 import com.test.autoriz1.Fragments.FragRegist;
 
@@ -81,17 +80,7 @@ public class MainActivity extends AppCompatActivity{
 
      public void onMyButtoClickEnter(View view){
 
-         Backendless.initApp( YOUR_APP_ID, YOUR_SECRET_KEY, VERSION); // where to get the argument values for this call
-         BackendlessUser user;
-
-         try
-         {
-             user = Backendless.UserService.login( username, password );
-         }
-         catch( BackendlessException exception )
-         {
-             // login failed, to get the error code, call exception.getFault().getCode()
-         }
+         
     }
 
 
